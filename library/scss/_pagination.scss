@@ -1,0 +1,50 @@
+/*
+ * WP-Paginate - WordPress Pagination Function
+ * Revision: $Id: wp-paginate.css 286636 2010-09-08 00:11:23Z emartin24 $
+ * Copyright (c) 2010 Eric Martin http://www.ericmmartin.com/projects/wp-paginate/
+ */
+
+ .pagination { margin-bottom: 1em;}
+
+.wp-paginate {
+	padding:0; 
+	margin:0;
+
+	li {
+		display:inline; 
+		list-style:none;
+
+		a {
+			background:#ddd; 
+			border:1px solid #ccc; 
+			color:#666; 
+			margin-right:4px; 
+			padding:3px 6px; 
+			text-align:center; 
+			text-decoration:none;
+
+			&:hover, &:active {
+				background:#ccc; 
+				color:#888;
+			}
+		}
+	}
+
+	.title {
+		color:#555; 
+		margin-right:4px;
+	}
+
+	.gap {
+		color:#999; 
+		margin-right:4px;
+	}
+
+	.current {
+		color:$black; 
+		background:$bones-blue; 
+		border:1px solid #89adcf; 
+		margin-right:4px; 
+		padding:3px 6px;
+	}
+}
