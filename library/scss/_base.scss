@@ -346,6 +346,17 @@ SIDEBAR STYLES
 .widget_search {
 	margin-top: 0;
 }
+
+.widget_twitter {
+	li {
+		margin-bottom: 0.5em;
+	}
+
+	.entry-meta {
+		font-size: 0.7em;
+	}
+}
+
 #searchform:before, #searchform:after{
     content:"";
     display:table;
