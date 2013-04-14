@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Natalie Zed
+Author: Adam Wills
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -20,7 +20,17 @@ GENERAL STYLES
 body {
 	
 }
-
+.commentlist {
+	.vcard {
+		margin-left: 170px;
+		img.avatar {
+			display:block;
+		}
+	}
+	.comment_content {
+		margin-left: 170px;
+	}
+}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -35,7 +45,34 @@ HEADER SYTLES
 
 .header { }
 
-	#logo {}
+	#logo {
+	  height: 300px;
+	  margin-bottom: 0; 
+	  padding: 1.5em 0 0 300px;
+	  font-size: 2em;
+
+	  .logo {
+	  		background-size: auto;
+			width:300px;
+			height: 300px;
+			top: 0;
+			left: 0;
+		}
+
+	  a {
+	  	color: #e4cf70;
+		text-shadow: 2px 2px 2px #8ea4a8;
+		font-size: 3em;
+
+		
+	  }
+
+	  .tagline {
+	  	padding-right: 0;
+	  	font-size: 1em;
+	  }
+
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -43,6 +80,7 @@ NAVIGATION STYLES
 
 nav {
 	text-align: center;
+
 
 	&.fixed {
 		position: fixed;
@@ -52,12 +90,18 @@ nav {
 			margin: 0;
 		}
 	}
+
+	.showmenu {
+		display: none;
+	}
 }
 
 .nav { 
 	background: #cdeef3;
 	border: 0;
 	margin-bottom: 0;
+	height: auto;
+	overflow: visible;
 	li {
 		position: relative;
 		display: inline-block;
@@ -95,7 +139,7 @@ nav {
 					padding-left: 10px;
 					border-right: 0;
 					display: block;
-					width: 180px;
+					width: 200px;
 					border-bottom: 1px solid #ccc;
 
 					&:hover,
@@ -171,7 +215,7 @@ SIDEBARS & ASIDES
 
 		ul {
 			li {
-				margin-bottom: 0.75em;
+				margin-bottom: 0em;
 
 				&:first-child {}
 				&:last-child {}

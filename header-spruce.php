@@ -30,7 +30,7 @@
 		
 		<script type="text/javascript" src="//use.typekit.net/uqa5vur.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+		
 	</head>
 	
 	<body <?php body_class(); ?>>
@@ -42,8 +42,7 @@
 				<div id="inner-header" class="wrap clearfix">
 					
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><span class="logo"></span><?php bloginfo('name'); ?></a>
-					<span class="tagline"><?php bloginfo( 'description' ); ?></span>
+					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow">Golden Spruce Entertainment</a>
 					</p>
 					
 					<!-- if you'd like to use the site description you can un-comment it below -->
@@ -53,7 +52,7 @@
 					<nav role="navigation">
 						<a class="showmenu" data-toggle="collapse" data-target=".nav-collapse"><span>Show</span> Navigation<i class="icon-angle-down nav-arrow"></i></a>
 
-						<?php bones_main_nav(); ?>
+						<?php spruce_main_nav(); ?>
 					</nav>
 				
 				</div> <!-- end #inner-header -->

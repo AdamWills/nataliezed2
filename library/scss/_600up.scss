@@ -1,0 +1,30 @@
+/******************************************************************
+Site Name: Natalie Zed
+Author: Adam Wills
+
+Stylesheet: 600px and Up Stylesheet
+
+Kind of a weird size - but custom to this site. Big enough to 
+include the logo in the header.
+
+******************************************************************/
+
+
+
+#logo {
+	  margin-bottom: 0; 
+	  line-height: 1em;
+	  padding: 2em 0 2em 220px;
+
+	  .logo {
+			background: url(../images/logo.jpg);
+			background-size: 200px;
+			width:200px;
+			height: 200px;
+			position: absolute;
+			top: 0;
+			left: 0;
+	  }
+
+
+}

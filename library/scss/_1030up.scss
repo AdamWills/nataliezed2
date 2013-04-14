@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: Natalie Zed
+Author: Adam Wills
 
 Stylesheet: Desktop Stylsheet
 
@@ -8,3 +8,31 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
+
+/*********************
+HEADER SYTLES
+*********************/
+
+.header { }
+
+	.wrap {
+		position: relative;
+	}
+
+	#logo {
+		font-size: 2em;
+		padding-left: 325px;
+		text-align: left;
+
+	  a {
+	  	color: #e4cf70;
+		text-shadow: 2px 2px 2px #8ea4a8;
+		font-size: 4em;
+
+	  }
+
+	  .tagline {
+	  	padding-right: 2em;
+	  }
+
+	}

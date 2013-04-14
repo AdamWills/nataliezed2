@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Natalie Zed
+Author: Adam Wills
 
 Stylesheet: Main Stylesheet
 
@@ -34,6 +34,9 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 // pagination from wp-paginate plugin
 @import "pagination";
 
+// FontAwesome
+@import "font-awesome";
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -46,6 +49,15 @@ tweeners.
 	@import "481up";
 
 } // end of media query
+
+
+@media only screen and (min-width: 600px) {
+
+	// styles in 768up.scss
+	@import "600up";
+
+} // end of media query
+
 
 /*
 TABLET & SMALLER LAPTOPS

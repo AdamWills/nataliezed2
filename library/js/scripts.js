@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
     /* getting viewport width */
     var responsive_viewport = $(window).width();
     
+
     /* if is below 481px */
     if (responsive_viewport < 481) {
     
@@ -49,6 +50,10 @@ jQuery(document).ready(function($) {
     if (responsive_viewport > 481) {
         
     } /* end larger than 481px */
+
+    if (responsive_viewport <768) {
+        
+    }
     
     /* if is above or equal to 768px */
     if (responsive_viewport >= 768) {
@@ -67,6 +72,23 @@ jQuery(document).ready(function($) {
     
 	
 	// add all your scripts here
+
+    $('.showmenu').click(function() {
+            var menu = $('nav .nav-collapse'),
+                navarrow = $('.showmenu .nav-arrow');
+
+            if (menu.hasClass('out')) {
+                menu.removeClass('out').animate({height: 0},500);
+                navarrow.removeClass('icon-angle-up').addClass('icon-angle-down');
+                $(this).find('span').html('Show');
+            }
+            else {
+                var autoHeight = menu.css('height','auto').height() + 2;
+                menu.height(0).addClass('out').animate({height:autoHeight},500);
+                navarrow.removeClass('icon-angle-down').addClass('icon-angle-up');
+                $(this).find('span').html('Hide');
+            }
+        });
 	
  
 }); /* end of as page load scripts */
@@ -106,3 +128,4 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
